@@ -24,7 +24,7 @@ public class Pessoa {
 		this.idade = idade;
 		this.vegetariana = vegetariana;
 	}
-	public static void verificarConsumo(int idade, boolean vegetariana) {
+	public void verificarConsumo(int idade, boolean vegetariana) {
 		double a;
 		if(vegetariana==true || idade<=3) {
 			System.out.println("Não consome carne");
