@@ -6,6 +6,7 @@ public class Constelacao {
 
 	public List<Estrela> constelacaoEstrela;
 	public String nome;
+	private Estrela estrela;
 
 	public void adicionar(Estrela e) {
 		this.constelacaoEstrela.add(e);
@@ -18,7 +19,7 @@ public class Constelacao {
 		double maxTemp = 0;
 		List<Estrela> constelacaoEstrela2 = this.constelacaoEstrela;
 		for (int i = 0; i < constelacaoEstrela2.size(); i++) {
-			Estrela estrela = constelacaoEstrela2.get(i);
+			estrela = constelacaoEstrela2.get(i);
 			if (Estrela.getTemperatura() > maxTemp)
 				maxTemp = Estrela.getTemperatura();
 		}
@@ -33,8 +34,7 @@ public class Constelacao {
 		if (this.constelacaoEstrela.isEmpty())
 			return;
 		for (Estrela estrela : constelacaoEstrela)
-			System.out.println(estrela.mostrar());
-
+			System.out.println();
 	}
 
 	public Constelacao(List<Estrela> constelacaoEstrela, String nome) {
