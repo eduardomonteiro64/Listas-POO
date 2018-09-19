@@ -5,15 +5,12 @@ public class Teste {
 	public static void main(String[] args) {
 		Partido p1 = new Partido("Novo", "Direita", 'N', 30);
 		Candidato c1 = new Candidato("Eduardo", "Novo");
+		Exibir x = new Exibir();
 
-		c1.exibirInfoCandidato();
-		if (c1.getPartido() == p1.getNome()) {
-			p1.exibirInfoPartido();
-		} else {
-			System.out.println("Partido não encontrado!!!");
-		}
+		x.exibir(c1, p1);
+		
 		c1.trocarPartido("ABC");
-		c1.exibirInfoCandidato();
+		x.exibir(c1,p1);
 	}
 
 }

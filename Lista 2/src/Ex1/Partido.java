@@ -5,8 +5,7 @@ public class Partido {
 	private char sigla;
 	private int numeroPartido;
 
-	public Partido(String nome, String ideologia, char sigla, int numeroPartido) {
-		super();
+	public Partido(String nome, String ideologia, char sigla, int numeroPartido) {	
 		this.nome = nome;
 		this.ideologia = ideologia;
 		this.sigla = sigla;
