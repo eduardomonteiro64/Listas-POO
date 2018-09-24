@@ -2,28 +2,21 @@ package Ex3;
 
 public class Complexo {
 	private double a, b;
-	private double c, d;
 
-	public Complexo(double a, double b, double c, double d) {
-		super();
+	public Complexo(double a, double b) {
 		this.a = a;
 		this.b = b;
-		this.c = c;
-		this.d = d;
 	}
 
-	public void soma(double i, double d) {
-		a = 20;
-		b = 30;
-		c = 40;
-		d = 50;
-		c += a;
-		d += b;
+	public void soma(double c, double d) {
+		a += c;
+		b += d;
+		System.out.println("Valor de A: " + this.a);
+		System.out.println("Valor de B: " + this.b);
 	}
 
-	public void multiplica(double a, double b, double c, double d) {
-		double multiplica;
-		double i;
+	public void multiplica(double c, double d) {
+		
 	}
 
 	public String toString() {
